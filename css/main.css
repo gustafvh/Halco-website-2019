@@ -63,6 +63,7 @@ html {
   position: fixed;
   right: 20px;
   bottom:40px;
+  writing-mode: vertical-rl;
   /* -webkit-transform: rotate(90deg); */
 
 
@@ -74,7 +75,7 @@ text-align: center;
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
 
   .mail-line,
   .social-icons {
