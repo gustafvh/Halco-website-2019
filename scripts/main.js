@@ -6,7 +6,13 @@ $(document).ready(function(){
   });
 
 
+
+
+
+
 });
 
 
-//Click på .nav-open --> Ändra opacity på 
+
+
+

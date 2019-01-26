@@ -16,7 +16,8 @@ html {
 }
 
 
-.intro h2 {
+.intro h2,
+.skills h2 {
 
   font-family: 'Karla';
   font-size: 60px;
@@ -26,7 +27,8 @@ html {
 
 }
 
-.intro p {
+.intro p,
+.skills p {
 
   font-family: 'Karla';
   font-size: 20px;
@@ -52,6 +54,7 @@ html {
   bottom:40px;
   /* -webkit-transform: rotateX(90deg);  */
   /* transform: rotateX(90deg); */
+  
 
 }
 
@@ -60,11 +63,28 @@ html {
   position: fixed;
   right: 20px;
   bottom:40px;
-  /* -webkit-transform: rotateX(90deg);  */
-  /* transform: rotateX(90deg); */
+  /* -webkit-transform: rotate(90deg); */
+
 
 }
 
+.skills {
+text-align: center;
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .mail-line,
+  .social-icons {
+    display: none;
+
+  }
+
+
+
+} 
 
 
 
