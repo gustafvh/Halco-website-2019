@@ -51,9 +51,10 @@ html {
 
   position: fixed;
   left: 20px;
-  bottom:40px;  
+  bottom:40px;
+  text-decoration: none;  
 }
-.icon-s { transition: all 0.4s ease; z-index:15; }
+.icon-s { transition: all 0.4s ease; z-index:15; text-decoration: none; color: #444;}
 
 .icon-s:hover {
 
@@ -182,8 +183,9 @@ text-align: left;
 
 }
 
+/* @media screen and (max-width:800px), (orientation: portrait) */
 
-@media screen and (max-width:800px), (orientation: portrait)
+@media screen and (max-width:800px)
 {
   .show-menu-btn,.hide-menu-btn{
     display: block;
