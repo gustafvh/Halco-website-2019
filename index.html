@@ -46,13 +46,58 @@
 
 <body>
 
-<div class="darkbg">
+<div class="darkbg blurScreen">
 
-<div style="height:200px;"></div>
+
+
+
+
+
+
+                        <div class="header">
+                                        <img style="margin:20px;" src="images/logos/logoPNG.png" width="150" height="auto" alt="">
+                                        <input type="checkbox" id="chk">
+                                        
+                                        <label for="chk" class="show-menu-btn">
+                                        <span style="font-size: 1.2em; color: #444444;" class="animated fadeInLeft">
+                                          <i style="margin-right:12px;" class="fas fa-ellipsis-h"></i>
+                                          </span>
+                                        </label>
+                                    
+                                        <ul class="menu">
+                                          <a href="#profile">Profile</a>
+                                          <a href="#clients">Clients</a>
+                                          <a href="#projects">Projects</a>
+                                          <a href="#contact">Contact</a>
+                                        
+                                          <span class="mobileMenuItems">
+
+                                                <a class="ctaBtn" style="color: #fff;" href="#contact">Contact me</a>
+
+                                                <p style="font-size: 11px; color:#444444;"> Lotsgatan 1, 185 32, Vaxholm <br> ORG.NR: 559114-7144 | © Halco Consulting 2019 </p>
+
+                                          </span>
+
+
+                                          <label for="chk" class="hide-menu-btn">
+                                                
+                                        <span style="font-size: 1.2em; color: #444444;" class="animated fadeInLeft">
+                                        <i style="margin-right:17px; margin-top: 11px;" class="fas fa-times"></i>
+                                         </span>
+                                          </label>
+                                        </ul>
+                        </div>
+
+
+
+
+<div class="mobileSpace" style="height:120px;"></div>
+<div style="height:40px;"></div>
 
 <div class="container intro">
 
         <div class="row">
+                <div class="col-sm-1"> </div>
                 <div class="col-sm-3 animated fadeInUp"> <img style="margin:20px;" src="images/animoji.png" width="90%" height="auto" alt=""> </div>
                 <div class="col-sm-6">
 
@@ -66,7 +111,7 @@
                         </span>
 
                 </div>
-                <div class="col-sm-3"> </div>
+                <div class="col-sm-2"> </div>
 
         </div>
 
@@ -76,12 +121,12 @@
         <div class="row">       
 
 
-        <span style="font-size: 1.2em; color: #444444;" class="social-icons">
+        <span style="font-size: 1.2em; color: #444444;" class="social-icons animated fadeInLeft">
                         <!-- <span class="my-line"></span> -->
                         
-                        <i style="display: block; margin:20px;"class="fab fa-github"></i>
-                        <i style="display: block; margin:20px;"class="fab fa-dribbble"></i>
-                        <i style="display: block; margin:20px;"class="fab fa-linkedin"></i>
+                        <i style="display: block; margin:20px;"class="fab fa-github icon-s"></i>
+                        <i style="display: block; margin:20px;"class="fab fa-dribbble icon-s"></i>
+                        <i style="display: block; margin:20px;"class="fab fa-linkedin icon-s"></i>
         
                         <svg style="margin:28px;" height="150" width="2">
                                         <rect width="2" height="150" rx="11" ry="11" style="fill: #444444; stroke: white; stroke-width: 0px;"/>
@@ -89,10 +134,11 @@
         
                 </span>
         
-                <span style="font-size: 1.2em; color: #444444;" class="mail-line">
+                <span style="font-size: 1.2em; color: #444444;" class="mail-line animated fadeInRight">
                                                 <!-- <span class="my-line"></span> -->
-                                                
-                        <p style="position: fixed; right: 13px; bottom: 220px;"> gustafha@kth.se</p>
+                                        
+                                
+                        <p class="icon-s" style="position: fixed; right: -5px; bottom: 205px;"> gustaf@halco.se</p>
                         
                         <svg style="margin:28px;" height="150" width="2">
                                         <rect width="2" height="150" rx="11" ry="11" style="fill: #444444; stroke: white; stroke-width: 0px;"/>
@@ -103,7 +149,7 @@
         </div>
 
 <div class="row ">
-        <span style="margin-top: 100px; animation-delay: 2500ms;" class="scroll-btn animated fadeIn">
+        <span style="margin-top: 100px; animation-delay: 3500ms;" class="scroll-btn animated fadeIn">
         <a href="#"> <span class="mouse">
             <span></span> </span> </a></span>
 </div>
@@ -114,9 +160,23 @@
 
         <div class="row">
 
-                <div class="col-sm-5"><h2>Designer</h2></div>
-                <div class="col-sm-2"><h2 style="font-weight:400;">/</h2></div>
-                <div class="col-sm-5"> <h2> < coder > </h2> </div>
+                <div class="col-sm-5 animated fadeInUp">
+                        <h2>Designer</h2>
+                        <p style="font-family: 'IBM Plex Mono'; color: #186cb5; "class="animated fadeInUp">Sketch, Wordpress, Prototyping</p>
+
+                        <p class="animated fadeInUp"> Helping clients shape an already existent website or application to something that their customers love using. Works with wireframes, mockups, high- and low fidelity prototypes. </p>
+                        
+                
+                
+                </div>
+                <div class="col-sm-2 animated fadeInUp"></div>
+                <div class="col-sm-5 animated fadeInUp">
+                         <h2> < coder > </h2> 
+                         <p style="font-family: 'IBM Plex Mono'; color: #186cb5; "class="animated fadeInUp">Angular, Java, Python</p>
+
+                         <p class="animated fadeInUp">Developing and improving applications with the biggest focus on the frontend. Big interest in developing application-concepts as personal projects to see ideas become a product. </p>
+                
+                </div>
 
         </div>
 
