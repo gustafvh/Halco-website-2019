@@ -2,7 +2,7 @@ html {
 
   background-color: #fff;
   font-family: "Karla";
-  padding: 20px;
+  
 
 }
 
@@ -10,8 +10,23 @@ html {
 
   background-color: #fff;
   color: #c7c7c7; 
-  height: 100%;
 
+  padding: 20px;
+
+
+}
+
+.sectionDiv {
+  font-family: 'IBM Plex Mono' !important;
+  color:#444444; 
+  font-size: 1.2em !important;
+
+
+}
+
+.sectionDivNumber {
+  font-family: 'IBM Plex Mono';
+  color:#186cb5;
 
 }
 
@@ -20,7 +35,8 @@ html {
 .skills h2 {
 
   font-family: 'Karla';
-  font-size: 60px;
+  font-size: 3.2em;
+  /* font-size: 57px; */
   font-weight: 700;
   color: #444444; 
   letter-spacing: -0.05em;
@@ -28,10 +44,11 @@ html {
 }
 
 .intro p,
-.skills p {
+.skills p
+ {
 
   font-family: 'Karla';
-  font-size: 20px;
+  font-size: 1.1em;
   color: #444444; 
   font-weight: 400;
 
@@ -109,7 +126,7 @@ text-align: left;
 }
 .menu a{
   display: inline-block;
-  color: #186cb5;
+  color: #444444;
   padding: 0 10px;
   transition: all 0.4s ease;
 }
@@ -243,9 +260,110 @@ text-align: left;
 
   }
 
+  .footer {text-align: center;}
+
+  .tabLabels a {font-size:0.7em !important; padding: 35px 15px !important;}
+
+  .tabcontent {padding: 0px 5px !important;}
+
+  .clients h3 {font-size: 1em !important;}
+
+  .clients p {font-size: 0.8em !important;}
+
 }
 
 
+
+.tabLabels {
+  float: left;
+  /* border: 1px solid #ccc; */
+  background-color: #fff;
+  width: 30%;
+  height: auto;
+}
+
+
+.tabLabels a {
+  display: block;
+  background-color: inherit;
+  padding: 27px 15px;
+  width: 100%;
+  border-left: 5px solid #dddddd;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.9em;
+  font-family: 'IBM Plex Mono'
+}
+
+
+.tabLabels a:hover {
+  background-color: #efefef;
+  color: #186cb5 !important;
+  border-left: 5px solid #186cb5;
+}
+
+
+
+.tabcontent {
+  float: left;
+  padding: 0px 35px;
+  width: 70%;
+  border-left: none;
+  height: auto;
+
+}
+
+
+.clients h3 {
+  font-family: 'Karla';
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #444444; 
+  letter-spacing: -0.05em;
+
+}
+
+.clients p {
+  font-family: 'Karla';
+  font-size: 1em;
+  font-weight: 400;
+  color: #444444; 
+  letter-spacing: -0.05em;
+
+}
+
+
+
+
+.footer {
+
+  background: #dddddd;
+  padding: 0px;
+  
+
+
+}
+
+.footer p {
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  font-size: 14px;
+  color: #444444;
+
+
+}
+
+.footer a {
+  font-family: 'Karla';
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  display: block;
+  font-size: 14px;
+  color: #000000 !important;
+}
 
 
 
