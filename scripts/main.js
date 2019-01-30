@@ -5,15 +5,16 @@ $(document).ready(function(){
     $("").toggleClass("main");
   });
 
+  //Init state
   $(".TabTwo, .TabThree, .TabFour").hide();
   $(".LabelOne").css({"color": "#186cb5", "border-left": "5px solid #186cb5"});
 
-
+  //Once clicked on TabX for every client
   $(".LabelOne").click(function(){
-    $(".TabOne").show("slow");
-    $(".TabTwo, .TabThree, .TabFour").hide();
-    $(".LabelOne").css({"color": "#186cb5", "border-left": "5px solid #186cb5"});
-    $(".LabelTwo, .LabelThree, .LabelFour").css({"color": "#dddddd", "border-left": "5px solid #dddddd"});
+    $(".TabOne").show("slow");          //Show tabs content
+    $(".TabTwo, .TabThree, .TabFour").hide();   //Hide the rest tabcontent
+    $(".LabelOne").css({"color": "#186cb5", "border-left": "5px solid #186cb5"}); //Put the tab label in 'active' state
+    $(".LabelTwo, .LabelThree, .LabelFour").css({"color": "#dddddd", "border-left": "5px solid #dddddd"});  //Put any previous label from active -> inactive state
   });
   $(".LabelTwo").click(function(){
     $(".TabTwo").show("slow");
@@ -34,6 +35,9 @@ $(document).ready(function(){
     $(".LabelFour").css({"color": "#186cb5", "border-left": "5px solid #186cb5"});
     $(".LabelOne, .LabelTwo, .LabelThree").css({"color": "#dddddd", "border-left": "5px solid #dddddd"});
   });
+
+
+  
 
 
 
