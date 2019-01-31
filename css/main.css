@@ -281,7 +281,9 @@ text-align: left;
 }
 
 @media screen and (max-width:600px)
-{.workTextSection {margin:40px; position: relative; right: -30px !important; bottom: 300px;}
+{.workTextSection {margin: 40px; margin-top:40px; margin-bottom: 40px; position: relative; right: -30px !important; bottom: 380px;}
+.firstWork { position: relative; bottom: 50px;}
+.projects {margin-top:-350px; margin-bottom:-420px;}
 }
 
 .tabLabels {

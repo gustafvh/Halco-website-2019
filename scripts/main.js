@@ -36,19 +36,16 @@ $(document).ready(function(){
     $(".LabelOne, .LabelTwo, .LabelThree").css({"color": "#dddddd", "border-left": "5px solid #dddddd"});
   });
 
-
   
 
-
-
-
-
   
-
-
 
 
 });
+
+
+
+
 
 
 
