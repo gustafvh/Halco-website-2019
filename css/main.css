@@ -271,6 +271,11 @@ text-align: left;
 
   .clients p {font-size: 0.8em !important;}
 
+  .showcase {-webkit-filter: blur(3px) !important; /* Safari */
+    filter: blur(35px);}
+
+  .workMargin {margin-top: -300px; margin-bottom: -300px;}
+
   
 
 }
@@ -389,6 +394,8 @@ text-align: left;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   -webkit-filter: none; /* Safari 6.0 - 9.0 */
   filter: none;
+
+  z-index: 100;
   
 
 }
