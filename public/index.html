@@ -5,6 +5,7 @@
 <!--
 Code written by Gustaf Halvardsson, Halco Consulting AB.
 Frameworks used: Bootstrap 4 CSS & jQuery    
+Delivered and hosted on Firebase
 -->
 
 <head>
@@ -14,7 +15,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
 
 <!--Title and favicon-->
 <link rel="shortcut icon" type="image/x-icon" href="images/Favicon.png" />
-<title>Halco 2019 TEST Product Designer | Gustaf Halvardsson</title>
+<title>Product Designer | Gustaf Halvardsson</title>
 
 <!-- Main CSS -->
 <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -70,7 +71,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
                                                                         
                                 </span>              
 
-                                <a class="typeform-share ctaBtn" href="https://gustafhalvardsson.typeform.com/to/XjlCrB" data-mode="popup" style="" data-submit-close-delay="5" target="_blank">Get started </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+                                <a class="typeform-share ctaBtn" href="https://gustafhalvardsson.typeform.com/to/XjlCrB" data-mode="popup"  data-submit-close-delay="5" target="_blank">Get started </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
                                 <p style="font-size: 11px; color:#444444;"> Lotsgatan 1, 185 32, Vaxholm <br> ORG.NR: 559114-7144 | © Halco Consulting 2019 </p>
 
@@ -97,7 +98,10 @@ Frameworks used: Bootstrap 4 CSS & jQuery
                 <div class="col-sm-1"> </div>
                 <div class="col-sm-3 animated fadeInUp"> 
                         
-                        <img style="margin:20px;" src="images/Animoji_Optimised.gif" width="90%" height="auto" alt=""> 
+                        <!-- <img style="margin:20px;" src="images/Animoji_Optimised.gif" width="90%" height="auto" alt="">  -->
+                        <video autoplay="autoplay" style="padding:30px; margin-top: -30px;" loop="loop" width="290" height="320" autoplay muted>
+                        <source src="images/animojClip.mp4" type="video/mp4" />
+                        </video>
                 
                 </div>
                 <div class="col-sm-6">
@@ -428,7 +432,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
                                                 <h4 style="font-size: 0.8em;">Invision • Sketch • Illustrator</h4>
                 
                                         </div>
-                                        <a href="images/showcase_solarsystem.gif" target="_blank" style="display: inline-block; font-size: 24px; margin: 10px; color: #444444;" class="fas fa-search-plus icon-s"></a>
+                                        <a href="images/SolarSystemiOS_Optimised.gif" target="_blank" style="display: inline-block; font-size: 24px; margin: 10px; color: #444444;" class="fas fa-search-plus icon-s"></a>
                                         <a href="https://dribbble.com/shots/5637385-Solar-System-Concept-for-iOS" target="_blank" style="display: inline-block; font-size: 24px; margin: 10px; color: #444444;" class="fas fa-link icon-s"></a>
                 
                                         <div class="mobileSpace" style="height:100px;"></div>
@@ -485,7 +489,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
 </div>
 <div class="col-sm-2"><p>Resources</p>
         <a href="https://drive.google.com/file/d/1xVyxuuXCMPybe-rLGH7Q28QZHPXArwLB/view?usp=sharing">View my CV</a>
-        <a href="https://kth.se">My school</a>
+        <a href="https://www.kth.se/student/kurser/program/CINTE/20172/arskurs1">My education</a>
 
 
 </div>
@@ -501,8 +505,20 @@ Frameworks used: Bootstrap 4 CSS & jQuery
 
 
 
-
-
+<!-- Fireabse web app script -->
+<script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAS0WXLcx8EFN6-Cd6Cl8BWbw0vIhZqNcg",
+    authDomain: "halco-website.firebaseapp.com",
+    databaseURL: "https://halco-website.firebaseio.com",
+    projectId: "halco-website",
+    storageBucket: "halco-website.appspot.com",
+    messagingSenderId: "633400621627"
+  };
+  firebase.initializeApp(config);
+</script>
 
 
 
