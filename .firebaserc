@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "halco-website",
+    "halco-website": "halco-website"
+  }
+}

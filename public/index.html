@@ -44,20 +44,21 @@ Frameworks used: Bootstrap 4 CSS & jQuery
 <div class="darkbg blurScreen">
 
         <div class="header">
-                 <img style="margin:20px;" src="images/logos/logoPNG.png" width="150" height="auto" alt="">
-                        <input type="checkbox" id="chk">
+                 <img class="animated fadeIn" style="margin:20px;" src="images/logos/logoPNG.png" width="150" height="auto" alt="">
+
                                         
-                        <label for="chk" class="show-menu-btn">
-                        <span style="font-size: 1.2em; color: #444444;" class="animated fadeInLeft">
-                                <i style="margin-right:12px;" class="fas fa-ellipsis-h"></i>
+
+                        <span style="font-size: 1.9em; color: #444444;" class="show-menu-btn animated fadeIn openMenu ">
+                                <i style="margin-right:12px;" class="fas fa-ellipsis-h "></i>
                                 </span>
-                        </label>
+
+                        
                                     
-                        <ul class="menu">
-                        <a href="#profile"><span style="color:#186cb5">01.</span>Profile</a>
-                        <a href="#clients"><span style="color:#186cb5">02.</span>Clients</a>
-                        <a href="#projects"><span style="color:#186cb5">03.</span>Work</a>
-                        <a href="#contact"><span style="color:#186cb5">04.</span>Projects</a>                  
+                        <ul class="menu" style="opacity: 0; z-index: -10;">
+                        <a class="menu-item" href="#profile"><span style="color:#186cb5">01.</span>Profile</a>
+                        <a class="menu-item" href="#clients"><span style="color:#186cb5">02.</span>Clients</a>
+                        <a class="menu-item" href="#work"><span style="color:#186cb5">03.</span>Work</a>
+                        <a class="menu-item" href="#projects"><span style="color:#186cb5">04.</span>Projects</a>                  
                                         
                         <span class="mobileMenuItems">                                
                                 <span style="font-size: 1.4em; color: #444444;" class="animated fadeInLeft">
@@ -68,8 +69,8 @@ Frameworks used: Bootstrap 4 CSS & jQuery
                                 <a href="mailto:gustaf@halco.se" style="margin: 10px; display: inline-block; color: #444444;" class="fas fa-envelope icon-s"></a>                 
                                                                         
                                 </span>              
-                                                
-                                <a class="ctaBtn" style="color: #fff;" href="mailto:gustaf@halco.se">Contact me</a>
+
+                                <a class="typeform-share ctaBtn" href="https://gustafhalvardsson.typeform.com/to/XjlCrB" data-mode="popup" style="" data-submit-close-delay="5" target="_blank">Get started </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
                                 <p style="font-size: 11px; color:#444444;"> Lotsgatan 1, 185 32, Vaxholm <br> ORG.NR: 559114-7144 | © Halco Consulting 2019 </p>
 
@@ -77,7 +78,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
 
                                 <label for="chk" class="hide-menu-btn">
                                                 
-                                <span style="font-size: 1.2em; color: #444444;" class="animated fadeInLeft">
+                                <span style="font-size: 1.2em; color: #444444;" class="animated fadeInLeft closeMenu">
                                  <i style="margin-right:17px; margin-top: 11px;" class="fas fa-times"></i>
                                 </span>
                                 </label>
@@ -159,7 +160,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
         <div class="row">
                         <div class="col-sm-2"></div>
                 <div class="col-sm-4 animated fadeInUp">
-                        <h2>Designer</h2>
+                        <h2 id="profile">Designer</h2>
                         <p style="font-family: 'IBM Plex Mono'; color: #186cb5; "class="animated fadeInUp">Sketch, Wordpress, Prototyping</p>
 
                         <p class="animated fadeInUp"> Helping clients shape an already existent website or application to something that their customers love using. Works with wireframes, mockups, high- and low fidelity prototypes. </p>
@@ -193,7 +194,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
         <div class="row">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
-                        <a class="sectionDiv"> <span class="sectionDivNumber">02.</span> Recent Clients <svg style="margin:0px;" height="2" width="100">
+                        <a id="clients" class="sectionDiv"> <span class="sectionDivNumber">02.</span> Recent Clients <svg style="margin:0px;" height="2" width="100">
                                         <rect width="100" height="3" style="fill: #c7c7c7;"/>
                                     </svg> </a>
                                     <div style="height:30px;"></div>
@@ -254,7 +255,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
                 <div class="col-sm-1"></div>
                 <div class="col-sm-8">
                         <div style="height:60px;"></div>
-                                <a class="sectionDiv"> <span class="sectionDivNumber">03.</span> Work <svg style="margin:0px;" height="2" width="100">
+                                <a id="work" class="sectionDiv"> <span class="sectionDivNumber">03.</span> Work <svg style="margin:0px;" height="2" width="100">
                                         <rect width="180" height="3" style="fill: #c7c7c7;"/>
                                             </svg> </a>
                         <div style="height:30px;"></div>
@@ -269,7 +270,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
 
                 <div class="col-sm-3">
 
-                        <img class="showcase firstWork" style="margin:20px;" src="images/showcase_asthmatuner.png" width="90%" height="auto" alt="">
+                        <img href="images/showcase_asthmatuner.png" href="" class="showcase firstWork" style="margin:20px;" src="images/showcase_asthmatuner.png" width="90%" height="auto" alt="">
                 </div>
                 <div class="col-sm-3 workTextSection">
 
@@ -285,14 +286,12 @@ Frameworks used: Bootstrap 4 CSS & jQuery
 
                         <div class="mobileSpace" style="height:100px;"></div>
 
-                        <!-- <h4 style="font-size:1.2em;"><a href="https://asthmatuner.se" target="_blank" style="display: inline-block; font-size: 24px; margin: 10px; color: #444444; position: relative; top:4px;" class="fas fa-angle-left icon-s"></a> 1 <span style="color: #444444;">of</span> 4 <a href="https://asthmatuner.se" target="_blank" style="animation-delay: 5500ms; display: inline-block; font-size: 24px; margin: 10px; color: #444444; position: relative; top:4px;" class="fas fa-angle-right icon-s animated tada clickRight"></a></h4> -->
-
                 
                 </div> 
                 
                 <div class="col-sm-3 workMargin">
 
-                                <img class="showcase" style="margin:20px;" src="images/showcase_reusedremade.png" width="90%" height="auto" alt="">
+                                <img href="images/showcase_reusedremade" class="showcase" style="margin:20px;" src="images/showcase_reusedremade.png" width="90%" height="auto" alt="">
                         </div>
                         <div class="col-sm-3 workTextSection workMargin">
         
@@ -326,7 +325,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
         
                                 
 
-                                <img class="showcase" style="margin:20px;" src="images/showcase_delagott.png" width="90%" height="auto" alt="">
+                                <img href="images/showcase_delagott.png" class="showcase" style="margin:20px;" src="images/showcase_delagott.png" width="90%" height="auto" alt="">
                         </div>
                         <div class="col-sm-3 workTextSection workMargin">
         
@@ -347,7 +346,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
                         
                         <div class="col-sm-3 workMargin">
         
-                                        <img class="showcase" style="margin:20px;" src="images/showcase_benify.png" width="90%" height="auto" alt="">
+                                        <img href="images/showcase_benify.png" class="showcase" style="margin:20px;" src="images/showcase_benify.png" width="90%" height="auto" alt="">
                                 </div>
                                 <div class="col-sm-3 workTextSection workMargin">
                 
@@ -381,7 +380,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
                         <div class="col-sm-1"></div>
                         <div class="col-sm-8">
                                 <div style="height:60px;"></div>
-                                        <a class="sectionDiv"> <span class="sectionDivNumber">04.</span> Projects <svg style="margin:0px;" height="2" width="100">
+                                        <a id="projects" class="sectionDiv"> <span class="sectionDivNumber">04.</span> Projects <svg style="margin:0px;" height="2" width="100">
                                                 <rect width="180" height="3" style="fill: #c7c7c7;"/>
                                                     </svg> </a>
                                 <div style="height:30px;"></div>
@@ -396,7 +395,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
         
                         <div class="col-sm-3">
         
-                                <img class="showcase firstWork" style="margin:20px;" src="images/showcase_footprint.png" width="90%" height="auto" alt="">
+                                <img href="https://dribbble.com/shots/5754630-Footprint-Environmental-gamification-app" class="showcase firstWork" style="margin:20px;" src="images/showcase_footprint.png" width="90%" height="auto" alt="">
                         </div>
                         <div class="col-sm-3 workTextSection">
         
@@ -418,7 +417,7 @@ Frameworks used: Bootstrap 4 CSS & jQuery
                         
                         <div class="col-sm-3 workMargin">
         
-                                        <img class="showcase" style="margin:20px;" src="images/SolarSystemiOS_Optimised.gif" width="90%" height="auto" alt="">
+                                        <img href="https://dribbble.com/shots/5637385-Solar-System-Concept-for-iOS" class="showcase" style="margin:20px;" src="images/SolarSystemiOS_Optimised.gif" width="90%" height="auto" alt="">
                                 </div>
                                 <div class="col-sm-3 workTextSection workMargin">
                 
@@ -466,27 +465,28 @@ Frameworks used: Bootstrap 4 CSS & jQuery
 
 </div>
 <div class="col-sm-2"><p>Homepage</p>
-<a href="#">Profile</a>
-<a href="#">Clients</a>
-<a href="#">Projects</a>
+<a href="#profile">Profile</a>
+<a href="#clients">Clients</a>
+<a href="#work">Work</a>
+<a href="#projects">Projects</a>
 
 </div>
 <div class="col-sm-2"><p>Links & Socials</p>
-        <a href="#">Profile</a>
-        <a href="#">Clients</a>
-        <a href="#">Projects</a>
+        <a href="https://www.linkedin.com/in/gustafhalvardsson/">LinkedIn</a>
+        <a href="https://dribbble.com/gustafvh">Dribble</a>
+        <a href="https://github.com/gustafvh">GitHub</a>
+
 
 </div>
 <div class="col-sm-2"><p>Blog</p>
-        <a href="#">Profile</a>
-        <a href="#">Clients</a>
-        <a href="#">Projects</a>
+        <a href="#">Coming Soon</a>
+  
 
 </div>
 <div class="col-sm-2"><p>Resources</p>
-        <a href="#">Profile</a>
-        <a href="#">Clients</a>
-        <a href="#">Projects</a>
+        <a href="https://drive.google.com/file/d/1xVyxuuXCMPybe-rLGH7Q28QZHPXArwLB/view?usp=sharing">View my CV</a>
+        <a href="https://kth.se">My school</a>
+
 
 </div>
 

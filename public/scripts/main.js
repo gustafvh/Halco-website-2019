@@ -1,9 +1,16 @@
 $(document).ready(function(){
 
-  $(".nav-items").click(function(){
-    // $(this).hide("slow");
-    $("").toggleClass("main");
+  $(".openMenu").click(function(){
+    $(".menu").animate({opacity: 0.95, zIndex: 10}, "fast");
+    // $(".menu").css({"opacity": "0.95", "z-index": "10"});
   });
+
+
+  $(".closeMenu, .menu-item").click(function(){
+    $(".menu").animate({opacity: 0.0, zIndex: -10}, "fast");
+  });
+
+
 
   //Init state
   $(".TabTwo, .TabThree, .TabFour").hide();
@@ -35,6 +42,9 @@ $(document).ready(function(){
     $(".LabelFour").css({"color": "#186cb5", "border-left": "5px solid #186cb5"});
     $(".LabelOne, .LabelTwo, .LabelThree").css({"color": "#dddddd", "border-left": "5px solid #dddddd"});
   });
+
+
+  
 
   
 
