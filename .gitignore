@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 
+
+.DS_Store
+
 # Firebase cache
 .firebase/
 
@@ -63,3 +66,4 @@ node_modules/
 
 # dotenv environment variables file
 .env
+public/.DS_Store
