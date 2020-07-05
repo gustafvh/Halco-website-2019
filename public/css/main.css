@@ -55,6 +55,11 @@ html {
 
 }
 
+.intro-profile-picture {
+  clip-path: circle(40% at center);
+  margin:20px;
+}
+
 
 
 .intro-text-box {
